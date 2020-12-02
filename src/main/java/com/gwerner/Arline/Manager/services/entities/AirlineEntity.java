@@ -4,7 +4,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.Type;
-import org.springframework.data.annotation.Version;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -19,6 +18,4 @@ public class AirlineEntity {
     private String name;
     private Double balance;
     private LocationEntity homeBase;
-    @Version
-    private Integer version;
 }

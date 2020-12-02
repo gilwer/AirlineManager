@@ -98,15 +98,6 @@ class AirLineManagerServiceTest {
     }
 
 
-    @Test
-    void getAirlineDistance() {
-        when(airlineRepository.findById("airline")).thenReturn(java.util.Optional.of(airline));
-        service.getAirlineDistance("airline");
-    }
-
-    @Test
-    void getDestinations() {
-    }
 
     @Test
     void buyAircraft() {
